@@ -1,12 +1,12 @@
-rule PK_TelekomMK_MPAWE : Telekom_MK
+rule PK_Generic_MPAWE : Mpawe_Generic
 {
     meta:
-        description = "Phishing Kit impersonating Telekom MK"
+        description = "Phishing Kit - MPawe"
         licence = "GPL-3.0"
         author = "Thomas Damonneville"
         reference = ""
         date = "2019-12-13"
-        comment = "Phishing Kit - Telekom MK - MPawe"
+        comment = "Phishing Kit - MPawe"
 
     strings:
         // the zipfile working on
@@ -14,7 +14,6 @@ rule PK_TelekomMK_MPAWE : Telekom_MK
         // specific file found in PhishingKit
         $spec_file = "mpaweskd" nocase
         $spec_file2 = "jwqop.jpg"
-        $spec_file3 = "thomemk.php"
 
     condition:
         // look for the ZIP header
@@ -23,7 +22,6 @@ rule PK_TelekomMK_MPAWE : Telekom_MK
         $zip_file and
         // check for file
         $spec_file and
-        $spec_file2 and
-        $spec_file3
+        $spec_file2
 }
 

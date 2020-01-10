@@ -1,20 +1,20 @@
-rule PK_TelekomMK_MPAWE : Telekom_MK
+rule PK_BankOfAmerica_cyb911 : BankOfAmerica
 {
     meta:
-        description = "Phishing Kit impersonating Telekom MK"
+        description = "Phishing Kit impersonating Bank Of America"
         licence = "GPL-3.0"
-        author = "Thomas Damonneville"
+        author = "Thomas 'tAd' Damonneville"
         reference = ""
-        date = "2019-12-13"
-        comment = "Phishing Kit - Telekom MK - MPawe"
+        date = "2020-01-09"
+        comment = "Phishing Kit - BankOfAmerica - by '@cyb911'"
 
     strings:
         // the zipfile working on
         $zip_file = { 50 4b 03 04 }
         // specific file found in PhishingKit
-        $spec_file = "mpaweskd" nocase
-        $spec_file2 = "jwqop.jpg"
-        $spec_file3 = "thomemk.php"
+        $spec_file = "funcations.php"
+        $spec_file2 = "maillist.txt"
+        $spec_file3 = "getrefrer.php"
 
     condition:
         // look for the ZIP header

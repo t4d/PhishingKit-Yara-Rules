@@ -1,4 +1,4 @@
-rule PK_Ourtime_123 : Ourtime_123
+rule PK_Ourtime_123 : Ourtime
 {
     meta:
         description = "Phishing Kit - OurTime.com - OurTime123"

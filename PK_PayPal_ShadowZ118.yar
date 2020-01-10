@@ -1,23 +1,23 @@
-rule PK_PayPal_H3ATSTR0K3 : PayPal
+rule PK_PayPal_ShadowZ118 : Paypal
 {
     meta:
-        description = "Phishing Kit impersonating PayPal"
+        description = "Phishing Kit impersonating Paypal"
         licence = "GPL-3.0"
-        author = "Thomas Damonneville"
+        author = "Thomas 'tAd' Damonneville"
         reference = ""
-        date = "2019-11-28"
-        comment = "Phishing Kit - PayPal - H3ATSTR0K3"
+        date = "2020-01-01"
+        comment = "Phishing Kit - Paypal - Shadow Z118 - scam Paypal V10"
 
     strings:
         // the zipfile working on
         $zip_file = { 50 4b 03 04 }
         // specific directory found in PhishingKit
-        $spec_dir = "prevents"
+        $spec_dir = "ShadowZ118"
         // specific file found in PhishingKit
-        $spec_file = "mine.php" nocase
-        $spec_file2 = "bcce592108d8ec029aa75f951662de2e.jpeg"
-        $spec_file3 = "captured.txt"
-        $spec_file4 = "H3ATSTR0K3.txt"
+        $spec_file = "FULLZ_CARD.php"
+        $spec_file2 = "V-Z118.js"
+        $spec_file3 = "14303695_853354554765349_388275294_o.jpg"
+	    $spec_file4 = "badge-512.png"
 
     condition:
         // look for the ZIP header
@@ -29,7 +29,6 @@ rule PK_PayPal_H3ATSTR0K3 : PayPal
         $spec_file2 and
         $spec_file3 and
         $spec_file4 and
-        // check for directory
-        $spec_dir
+	    $spec_dir
 }
 

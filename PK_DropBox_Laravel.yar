@@ -2,7 +2,7 @@ rule PK_DropBox_Laravel : Dropbox
 {
     meta:
         description = "Phishing Kit impersonating DropBox"
-        licence = "GPL-3.0"
+        licence = ""
         author = "Thomas 'tAd' Damonneville"
         reference = ""
         date = "2019-12-28"
