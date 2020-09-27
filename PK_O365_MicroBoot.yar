@@ -3,7 +3,7 @@ rule PK_O365_MicroBoot
     meta:
         description = "Phishing Kit impersonating Office 365"
         licence = ""
-        author = "Guido 'tAd' Denzler"
+        author = "Guido Denzler"
         reference = ""
         date = "2020-02-25"
         comment = "Phishing Kit - O365 - MICROBOOT - ICQ:703514486"
