@@ -14,7 +14,7 @@ rule PK_O365_Spin : Office365
         // specific directory found in PhishingKit
         $spec_dir = "do"
         // specific files found in PhishingKit
-        $spec_file1 = "spln.php"
+        $spec_file = "spln.php"
         $spec_file2 = "spin.php"
         $spec_file3 = "pai.html"
 
