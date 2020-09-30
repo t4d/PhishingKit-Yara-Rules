@@ -19,5 +19,5 @@ rule PK_O365_Xphisher
     condition:
         uint32(0) == 0x04034b50 and
         $zip_file
-        and 2 of ($spec_file*)
+        and all of ($spec_file*)
 }
