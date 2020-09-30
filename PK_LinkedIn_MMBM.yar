@@ -1,4 +1,4 @@
-rule PK_LinkedIn_MMBM
+rule PK_LinkedIn_MMBM : LinkedIn
 {
     meta:
         description = "LinkedIn phishing kit created by MMBM"
