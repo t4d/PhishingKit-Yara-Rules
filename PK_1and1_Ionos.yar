@@ -1,4 +1,4 @@
-rule PK_1and1_Ionos : 1and1
+rule PK_1and1_Ionos : one_and_one
 {
     meta:
         description = "Phishing Kit impersonating IONOS by 1and1"
