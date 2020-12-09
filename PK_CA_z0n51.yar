@@ -1,4 +1,4 @@
-rule PK_CA_z0ne51 : Credit_Agricole
+rule PK_CA_z0n51 : Credit_Agricole
 {
     meta:
         description = "Phishing Kit impersonating Credit Agricole"
