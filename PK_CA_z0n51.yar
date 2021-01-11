@@ -4,7 +4,7 @@ rule PK_CA_z0n51 : Credit_Agricole
         description = "Phishing Kit impersonating Credit Agricole"
         licence = "GPL-3.0"
         author = "Thomas 'tAd' Damonneville"
-        reference = ""
+        reference = "https://tad0.medium.com/how-phishing-kits-use-telegram-49fc770eb932"
         date = "2020-12-01"
         comment = "Phishing Kit - Credit Agricole - 'Author: z0n51'"
 
