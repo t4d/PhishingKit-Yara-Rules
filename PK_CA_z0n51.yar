@@ -10,7 +10,7 @@ rule PK_CA_z0n51 : Credit_Agricole
 
     strings:
         $zip_file = { 50 4b 03 04 }
-        $spec_dir = "PK_CA_z0ne5151"
+        $spec_dir = "z0n51"
         $spec_file1 = "_media-queries.scss"
         $spec_file2 = "resulttt987.txt"
         $spec_file3 = "authfort.php"
