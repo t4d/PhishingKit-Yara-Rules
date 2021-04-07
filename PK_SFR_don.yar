@@ -14,7 +14,7 @@ rule PK_SFR_don : SFR
         $spec_dir = "SFRMailmail_files"
         // specific file found in PhishingKit
         $spec_file = "SFRMailmail.htm"
-        $spec_file2 = "green.php"
+        $spec_file2 = "mire-sfr-mail.jpg"
         $spec_file3 = "HSFR_ec2-1.png"
         $spec_file4 = "style-responsive.css"
 

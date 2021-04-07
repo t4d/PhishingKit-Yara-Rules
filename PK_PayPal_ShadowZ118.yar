@@ -6,13 +6,13 @@ rule PK_PayPal_ShadowZ118 : Paypal
         author = "Thomas 'tAd' Damonneville"
         reference = ""
         date = "2020-01-01"
-        comment = "Phishing Kit - Paypal - Shadow Z118 - scam Paypal V10"
+        comment = "Phishing Kit - Paypal - Shadow Z118 v1.10 - scam Paypal"
 
     strings:
         // the zipfile working on
         $zip_file = { 50 4b 03 04 }
         // specific directory found in PhishingKit
-        $spec_dir = "ShadowZ118"
+        $spec_dir = "functions"
         // specific file found in PhishingKit
         $spec_file = "FULLZ_CARD.php"
         $spec_file2 = "V-Z118.js"
