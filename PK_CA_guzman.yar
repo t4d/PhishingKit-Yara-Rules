@@ -11,7 +11,7 @@ rule PK_CA_guzman : Credit_Agricole
     strings:
         $zip_file = { 50 4b 03 04 }
         $spec_dir = "z0n51"
-        $spec_dir = "phpmailer"
+        $spec_dir2 = "phpmailer"
         $spec_file1 = "_media-queries.scss"
         $spec_file2 = "resulttt987.txt"
         $spec_file3 = "get_oauth_token.php"
@@ -20,7 +20,7 @@ rule PK_CA_guzman : Credit_Agricole
     condition:
         uint32(0) == 0x04034b50 and
         $zip_file and
-        $spec_dir and
+        all of ($spec_dir*) and
         // check for file
         all of ($spec_file*)
 }
