@@ -10,7 +10,7 @@ rule PK_BancaSella_bim : Banca Sella
 
     strings:
         // the zipfile working on
-        $bla_file = { 50 4b 03 04 }
+        $zip_file = { 50 4b 03 04 }
         $spec_dir = "pagamento"
         $spec_file = "succes1.php"
         $spec_file2 = "rm.php"
