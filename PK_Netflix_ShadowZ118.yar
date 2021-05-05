@@ -1,4 +1,4 @@
-rule PK_Netflix_ShadowZ118.yar : Netflix
+rule PK_Netflix_ShadowZ118 : Netflix
 {
     meta:
         description = "Phishing Kit impersonating Netflix"
