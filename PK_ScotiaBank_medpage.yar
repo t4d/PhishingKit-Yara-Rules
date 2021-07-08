@@ -13,7 +13,7 @@ rule PK_ScotiaBank_medpage : ScotiaBank
         $spec_dir = "files"
         $spec_file1 = "logging.php"
         $spec_file2 = "processing.php"
-        $spec_file3 = "indexxx.html"
+        $spec_file3 = "indexxx.php"
         $spec_file4 = "AppMeasurement_Module_ActivityMap.js"
 
     condition:
