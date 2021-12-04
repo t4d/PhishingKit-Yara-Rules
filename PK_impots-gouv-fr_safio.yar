@@ -10,7 +10,7 @@ rule PK_impots_gouv_fr_safio : impots_gouv_fr
 
     strings:
         $zip_file = { 50 4b 03 04 }
-        $spec_dir = "X"
+        $spec_dir = "error/X"
         $spec_file1 = "Cobra.php"
         $spec_file2 = "aide.gif"
         $spec_file3 = "bastila.PNG"
