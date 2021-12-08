@@ -23,6 +23,7 @@ rule PK_Jenis_GhostMode : Jenis
         uint32(0) == 0x04034b50 and
         // make sure we have a local file header
         $zip_file and
+        $spec_dir and
         // check for file
         all of ($spec_file*)
 }
