@@ -1,12 +1,12 @@
-rule PK_Generic_Shop16
+rule PK_Generic_16Shop
 {
     meta:
-        description = "Phishing Kit impersonating created by Shop16"
+        description = "16Shop Phishing Kit"
         licence = ""
         author = "Guido Denzler"
         reference = ""
         date = "2020-02-25"
-        comment = "Phishing Kit - Generic - Shop16"
+        comment = "Phishing Kit - Generic - 16Shop"
 
     strings:
         $zip_file = { 50 4b 03 04 }
