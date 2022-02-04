@@ -4,7 +4,7 @@ rule PK_DEWA_moha : DEWA
         description = "Phishing Kit impersonating Dubai Electricity and Water Authority"
         licence = "GPL-3.0"
         author = "Thomas 'tAd' Damonneville"
-        reference = ""
+        reference = "https://stalkphish.com/2022/02/04/phishing-kit-moha-kit-targeting-dewa-suppliers/"
         date = "2022-02-03"
         comment = "Phishing Kit - DEWA - '- Created By Moha404 +'"
 
