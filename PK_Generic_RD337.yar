@@ -1,24 +1,23 @@
-rule PK_Netflix_z0n51 : Netflix
+rule PK_Generic_RD337 : RD337_Generic
 {
     meta:
-        description = "Phishing Kit impersonating Netflix"
+        description = "Phishing Kit - RD337 - Generic email credentials stealer"
         licence = "GPL-3.0"
-        author = "Thomas 'tAd' Damonneville"
+        author = "Thomas Damonneville"
         reference = ""
-        date = "2021-06-02"
-        comment = "Phishing Kit - Netflix - z0n51 directory"
+        date = "2022-01-29"
+        comment = "Phishing Kit - RD337"
 
     strings:
         // the zipfile working on
         $zip_file = { 50 4b 03 04 }
         // specific directory found in PhishingKit
-        $spec_dir = "inc"
-        $spec_dir2 = "z0n51/"
+        $spec_dir = "images"
         // specific file found in PhishingKit
-        $spec_file = "fbbb.png"
-        $spec_file2 = "ss.php"
-        $spec_file3 = "details.php"
-        $spec_file4 = "app.php"
+        $spec_file = "26-269507_arbys-logo-transparent-norton-secured-logo-png-png.png"
+        $spec_file2 = "next.php"
+        $spec_file3 = "email.php"
+        $spec_file4 = "favicons"
 
     condition:
         // look for the ZIP header
@@ -29,3 +28,4 @@ rule PK_Netflix_z0n51 : Netflix
         // check for file
         all of ($spec_file*)
 }
+
