@@ -1,4 +1,4 @@
-rule PK_IRS_sirus : ICS
+rule PK_ICS_sci : ICS
 {
     meta:
         description = "Phishing Kit impersonating International Card Services"
