@@ -15,7 +15,7 @@ rule PK_Suncoast_bz : Suncoast
         $spec_file2 = "st.gif"
         $spec_file3 = "s11.png"
         $spec_file4 = "email.php"
-        $spec_file4 = "need3.php"
+        $spec_file5 = "need3.php"
 
     condition:
         uint32(0) == 0x04034b50 and
