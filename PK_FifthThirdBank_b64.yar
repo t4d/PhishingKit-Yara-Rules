@@ -1,4 +1,4 @@
-rule PK_FifthThirdBank_akara : FifthThirdBank
+rule PK_FifthThirdBank_b64 : FifthThirdBank
 {
     meta:
         description = "Phishing Kit impersonating Fifth Third Bank"
@@ -6,7 +6,7 @@ rule PK_FifthThirdBank_akara : FifthThirdBank
         author = "Thomas 'tAd' Damonneville"
         reference = ""
         date = "2022-04-23"
-        comment = "Phishing Kit - Fifth Third Bank - 'By Akara Nwamama'"
+        comment = "Phishing Kit - Fifth Third Bank - Base64 obfuscation used on PHP files"
 
     strings:
         // the zipfile working on

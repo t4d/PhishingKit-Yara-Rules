@@ -15,6 +15,7 @@ rule PK_AlaskaUSA_metoll : AlaskaUSA
         $spec_file = "1.php"
         $spec_file2 = "2.php"
         $spec_file3 = "security.php"
+        $spec_file31 = "pagepage.html"
         $spec_file4 = "AkusaIcon.ttf"
 
     condition:
@@ -23,5 +24,8 @@ rule PK_AlaskaUSA_metoll : AlaskaUSA
         // make sure we have a local file header
         $zip_file and
         // check for file
-        all of ($spec_file*)
+        $spec_file and 
+        $spec_file2 and 
+        ($spec_file3 or $spec_file31) and 
+        $spec_file4
 }
