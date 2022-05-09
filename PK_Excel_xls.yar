@@ -21,8 +21,7 @@ rule PK_Excel_xls : Excel
         // look for the ZIP header
         uint32(0) == 0x04034b50 and
         // make sure we have a local file header
-        $zip_file and
-        $spec_dir and 
+        $zip_file and 
         // check for file
         all of ($spec_file*)
 }
