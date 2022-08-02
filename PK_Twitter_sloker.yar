@@ -1,24 +1,24 @@
-rule PK_USPS_aron2 : USPS
+rule PK_Twitter_sloker : Twitter
 {
     meta:
-        description = "Phishing Kit impersonating USPS"
+        description = "Phishing Kit impersonating Twitter"
         licence = "GPL-3.0"
         author = "Thomas 'tAd' Damonneville"
         reference = ""
-        date = "2021-09-01"
-        comment = "Phishing Kit - USPS - 'CODED BY ARON-TN'"
+        date = "2022-07-27"
+        comment = "Phishing Kit - Twitter - 'BY CODER SLOKER'"
 
     strings:
         // the zipfile working on
         $zip_file = { 50 4b 03 04 }
         // specific directory found in PhishingKit
-        $spec_dir = "anti"
+        $spec_dir = "sloker"
         // specific file found in PhishingKit
-        $spec_file = "id.php"
-        $spec_file2 = "index3.php"
-        $spec_file3 = "anti8.php"
-        $spec_file4 = "captured.txt"
-        $spec_file5 = "thanks.php"
+        $spec_file = "confirmed.php"
+        $spec_file2 = "username.php"
+        $spec_file3 = "tg.php"
+        $spec_file4 = "twigif1.gif"
+
 
     condition:
         // look for the ZIP header

@@ -17,9 +17,9 @@ rule PK_USPS_ard8no : USPS
         // specific file found in PhishingKit
         $spec_file = "payment.php"
         $spec_file2 = "sms2.php"
-        $spec_file3 = "wait3.php"
+        $spec_file3 = "wait.php"
         $spec_file4 = "send4.php"
-        $spec_file5 = "oldusps.gif"
+        $spec_file5 = "schedule-redelivery.css"
 
     condition:
         // look for the ZIP header
