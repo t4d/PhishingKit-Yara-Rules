@@ -13,11 +13,12 @@ rule PK_OneDrive_venza : OneDrive
         $spec_file1 = "email.php"
         $spec_file2 = "next.php"
         $spec_file3 = "1.png"
+        $spec_file32 = "020.png"
         $spec_file4 = "1.html"
 
     condition:
         uint32(0) == 0x04034b50 and
         $zip_file and
         // check for file
-        all of ($spec_file*)
+        4 of ($spec_file*)
 }
