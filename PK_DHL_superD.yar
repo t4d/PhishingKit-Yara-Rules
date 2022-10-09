@@ -12,7 +12,7 @@ rule PK_DHL_superD : DHL
         $zip_file = { 50 4b 03 04 }
         $spec_dir = "panel"
         $spec_dir2 = "system"
-        $spec_file1 = "info.php"
+        $spec_file1 = "detect.php"
         $spec_file2 = "portail.php"
         $spec_file3 = "setting.php"
         $spec_file4 = "verification2.php"

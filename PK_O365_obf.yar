@@ -6,7 +6,7 @@ rule PK_O365_obf : Office365
         author = "Thomas 'tAd' Damonneville"
         reference = ""
         date = "2022-03-20"
-        comment = "Phishing Kit - Office 365 - obfuscated"
+        comment = "Phishing Kit - Office 365 - obfuscated files"
 
     strings:
         $zip_file = { 50 4b 03 04 }

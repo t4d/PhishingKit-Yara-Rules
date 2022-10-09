@@ -11,7 +11,7 @@ rule PK_MTBank_z118 : MT_Bank
     strings:
         // the zipfile working on
         $zip_file = { 50 4b 03 04 }
-        $spec_dir = "fonts"
+        $spec_dir = "font"
         $spec_dir1 = "success"
         // specific files found in PhishingKit
         $spec_file = "caps.php"
