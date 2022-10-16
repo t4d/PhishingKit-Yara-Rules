@@ -16,7 +16,7 @@ rule PK_Amazon_rd292 : Amazon
         $spec_file2 = "detail.html"
         $spec_file3 = "email.php"
         $spec_file4 = "thank.html"
-        $spec_file5 = "card.html"
+        $spec_file5 = "load.gif"
 
     condition:
         uint32(0) == 0x04034b50 and
