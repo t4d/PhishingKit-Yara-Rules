@@ -12,8 +12,7 @@ rule PK_USPS_okbbx : USPS
         // the zipfile working on
         $zip_file = { 50 4b 03 04 }
         // specific directory found in PhishingKit
-        $spec_dir = "contract"
-        $spec_dir2 = "inc"
+        $spec_dir = "inc"
         // specific file found in PhishingKit
         $spec_file = "index9.php"
         $spec_file2 = "thanks.php"
