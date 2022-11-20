@@ -18,7 +18,7 @@ rule PK_Nickel_tahma9 : Nickel
         $spec_file = "auth.php"
         $spec_file2 = "c94c03d8.png"
         $spec_file3 = "informations.php"
-        $spec_file4 = "FULLZ.html"
+        $spec_file4 = "sms.php"
 
     condition:
         // look for the ZIP header
