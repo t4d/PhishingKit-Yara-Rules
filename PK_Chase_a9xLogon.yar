@@ -23,7 +23,7 @@ rule PK_Chase_a9xLogon : Chase
     condition:
         // look for the ZIP header
         uint32(0) == 0x04034b50 and 
-	   $local_file and 
-	   all of ($spec_dir*) and 
-	   all of ($spec_file*)
+       $local_file and 
+       all of ($spec_dir*) and 
+       all of ($spec_file*)
 }
