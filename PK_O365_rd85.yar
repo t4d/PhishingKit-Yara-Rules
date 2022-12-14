@@ -17,7 +17,7 @@ rule PK_O365_rd85 : Office365
         $spec_file2 = "next.php"
         $spec_file3 = "success.PNG"
         $spec_file4 = "microsoft_logo.svg"
-        $spec_file4 = "key.svg"
+        $spec_file5 = "key.svg"
 
     condition:
         // look for the ZIP header
