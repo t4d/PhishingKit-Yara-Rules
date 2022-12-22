@@ -15,7 +15,7 @@ rule PK_IsraelPost_gcs : IsraelPost
         $spec_dir1 = "files"
         // specific files found in PhishingKit
         $spec_file1 = "sms.php"
-        $spec_file2 = "ISREALPOST_Rzlt.txt"
+        $spec_file2 = "sendbank.php"
         $spec_file3 = "vbvmcs.png"
         $spec_file4 = "step2.php"
 

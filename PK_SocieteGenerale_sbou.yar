@@ -6,7 +6,7 @@ rule PK_SocieteGenerale_sbou : SocieteGenerale
         author = "Thomas 'tAd' Damonneville"
         reference = ""
         date = "2022-02-02"
-        comment = "Phishing Kit - Societe Generale - 'SG 2017 by Marco Sbou'"
+        comment = "Phishing Kit - Societe Generale - 'powered by bikola'"
 
     strings:
         // the zipfile working on
