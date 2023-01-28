@@ -4,7 +4,7 @@ rule PK_Coinbase_stillalive : Coinbase
         description = "Phishing Kit impersonating Coinbase"
         licence = "GPL-3.0"
         author = "Thomas 'tAd' Damonneville"
-        reference = ""
+        reference = "https://stalkphish.com/2023/01/25/phishing-kit-coinbase-phishing-kit-with-live-admin-panel-to-bypass-mfa-an-analysis/"
         date = "2022-12-22"
         comment = "Phishing Kit - Coinbase - Actor: '@Facebook - https://www.facebook.com/ownerstillalive/'"
 
