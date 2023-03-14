@@ -1,3 +1,6 @@
+
+PhishingKit-Yara-Rules is a [StalkPhish Project](https://stalkphish.com)
+
 ## YARA repository for Phishing Kits zip files
 This repository, dedicated to Phishing Kits zip files YARA rules, is based on zip raw format analysis to find directories and files names, you don't need yara-extend there.
 This repository is open to all rules contribution, feel free to create pull request with your own set of rules, sharing knowledge is the better way to improve our detection and defence against Phishing threat. 
