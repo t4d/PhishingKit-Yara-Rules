@@ -6,7 +6,7 @@ rule PK_Citizens_wealthmint : Citizens
         author = "Thomas 'tAd' Damonneville"
         reference = ""
         date = "2022-06-28"
-        comment = "Phishing Kit - Citizens - '- @wealthmint -'"
+        comment = "Phishing Kit - Citizens - '- @wealthmint -' AKA 'RD267'"
 
     strings:
         // the zipfile working on
