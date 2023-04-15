@@ -1,22 +1,23 @@
 rule PK_UKGov_DVLA : UKGov
 {
     meta:
-        description = "Phishing Kit impersonating UK Government and vehicle tax payment"
+        description = "Phishing Kit impersonating UK Government Gateway"
         licence = "GPL-3.0"
         author = "Thomas 'tAd' Damonneville"
         reference = ""
-        date = "2020-09-20"
+        date = "2023-03-25"
         comment = "Phishing Kit - UK Gov. - Tax payment"
 
     strings:
         // the zipfile working on
         $zip_file = { 50 4b 03 04 }
         // specific directory found in PhishingKit
-        $spec_dir = "source"
+        $spec_dir = "fonts"
         // specific file found in PhishingKit
-        $spec_file = "cleanup.php"
-        $spec_file2 = "open-government-licence.png"
-        $spec_file3 = "numberplate.css"
+        $spec_file = "doc_5.html"
+        $spec_file2 = "_mstr_.php"
+        $spec_file3 = "js.php"
+        
 
     condition:
         // look for the ZIP header

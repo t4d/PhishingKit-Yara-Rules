@@ -1,22 +1,23 @@
-rule PK_ZortFX_mad : ZortFX
+rule PK_BankOfAmerica_rd1218 : BankOfAmerica
 {
     meta:
-        description = "Phishing Kit impersonating ZortFX Market"
+        description = "Phishing Kit impersonating Bank Of America"
         licence = "GPL-3.0"
         author = "Thomas 'tAd' Damonneville"
         reference = ""
-        date = "2022-11-24"
-        comment = "Phishing Kit - ZortFX - '--Mad--'"
+        date = "2023-04-08"
+        comment = "Phishing Kit - BankOfAmerica - 'CrEaTeD bY VeNzA'"
 
     strings:
         // the zipfile working on
         $zip_file = { 50 4b 03 04 }
+        $spec_dir = "css"
+        $spec_dir2 = "images"
         // specific file found in PhishingKit
-        $spec_dir = "Web Client Sign In_files"
-        $spec_file = "verified.php"
-        $spec_file2 = "upgradesuccessful.html"
-        $spec_file3 = "zi.png"
-        $spec_file4 = "commonloginzhtmlskin.css"
+        $spec_file = "quest.html"
+        $spec_file2 = "pas.html"
+        $spec_file3 = "next.php"
+        $spec_file4 = "bofa_icon_avoid_fraud.png"
 
     condition:
         // look for the ZIP header
