@@ -1,4 +1,4 @@
-rule  : Ent
+rule PK_Ent_xxx : Ent
 {
     meta:
         description = "Phishing Kit impersonating Ent Online Banking"
