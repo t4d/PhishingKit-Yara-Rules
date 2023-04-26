@@ -20,7 +20,7 @@ rule PK_Alibaba_n0b0dy2 : Alibaba
     condition:
         uint32(0) == 0x04034b50 and
         $zip_file and
-        $spec_dir and
+        all of ($spec_dir*) and
         // check for file
         all of ($spec_file*)
 }
