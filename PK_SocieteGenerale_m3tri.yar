@@ -14,7 +14,7 @@ rule PK_SocieteGenerale_m3tri : SocieteGenerale
         // specific file found in PhishingKit
         $spec_dir = "M3tri-hash-bots"
         $spec_dir1 = "visites"
-        $spec_dir1 = "sass"
+        $spec_dir2 = "sass"
         $spec_file1 = "OTP.php"
         $spec_file2 = "logOtp.php"
         $spec_file3 = "PORT.php"
