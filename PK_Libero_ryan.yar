@@ -7,7 +7,7 @@ rule PK_Libero_ryan : Libero
         reference = ""
         date = "2023-09-04"
         comment = "Phishing Kit - Libero - 'rYan@LIBERO.IT 2023 UPDATE LOGIN INFO'"
-rYan@LIBERO.IT 2023 UPDATE LOGIN INFO
+
     strings:
         // the zipfile working on
         $zip_file = { 50 4b 03 04 }
