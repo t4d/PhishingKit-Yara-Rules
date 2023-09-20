@@ -1,24 +1,25 @@
-rule PK_Libero_ryan : Libero
+rule PK_Adobe_RD2 : Adobe
 {
     meta:
-        description = "Phishing Kit impersonating Libero Italy"
+        description = "Phishing Kit impersonating Adobe "
         licence = "GPL-3.0"
         author = "Thomas Damonneville"
         reference = ""
-        date = "2023-09-04"
-        comment = "Phishing Kit - Libero - 'rYan@LIBERO.IT 2023 UPDATE LOGIN INFO'"
+        date = "2023-09-06"
+        comment = "Phishing Kit - Adobe - 'cReAtEd By VeNzA'"
 
     strings:
         // the zipfile working on
         $zip_file = { 50 4b 03 04 }
         // specific directory found in PhishingKit
-        $spec_dir = "files"
+        $spec_dir = "css"
+        $spec_dir2 = "images"
         // specific file found in PhishingKit
-        $spec_file = "get_pass.php"
-        $spec_file2 = "signin.php"
-        $spec_file3 = "core-it.js"
-        $spec_file4 = "logo-buonissimo.png"
-        $spec_file5 = "libero_favicon.ico"
+        $spec_file = "email.php"
+        $spec_file2 = "next.php"
+        $spec_file3 = "index.html"
+        $spec_file4 = "adobe1.png"
+        $spec_file5 = "adobe1-w.png"
 
     condition:
         // look for the ZIP header

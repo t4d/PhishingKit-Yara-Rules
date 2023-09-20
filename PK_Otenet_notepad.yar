@@ -1,4 +1,4 @@
-rule PK_Otenet_notepad : otenet
+rule PK_OtpBank_v6 : OtpBank
 {
     meta:
         description = "Phishing Kit impersonating Cosmote Webmail"
