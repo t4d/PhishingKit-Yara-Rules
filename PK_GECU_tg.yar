@@ -25,9 +25,7 @@ rule PK_GECU_tg : GECU
         uint32(0) == 0x04034b50 and
         // make sure we have a local file header
         $zip_file and
-        $spec_dir and 
+        all of ($spec_dir*) and 
         // check for file
-        $spec_file and
-        $spec_file2 and
-        $spec_file3
+        all of ($spec_file*)
 }
