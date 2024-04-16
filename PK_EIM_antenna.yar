@@ -25,7 +25,7 @@ rule PK_EIM_antenna : Etisalat
         uint32(0) == 0x04034b50 and
         // make sure we have a local file header
         $zip_file and
-        $all of ($spec_dir*) and
+        all of ($spec_dir*) and
         // check for file
         all of ($spec_file*)
 }
