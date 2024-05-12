@@ -2,7 +2,7 @@ rule PK_Bunq_kaktys : Bunq
 {
     meta:
         description = "Phishing Kit impersonating Bunq"
-        licence = "GPL-3.0"
+        licence = "AGPL-3.0"
         author = "Thomas 'tAd' Damonneville"
         reference = "https://krebsonsecurity.com/2021/02/arrest-raids-tied-to-u-admin-phishing-kit/"
         date = "2023-12-17"
@@ -20,7 +20,7 @@ rule PK_Bunq_kaktys : Bunq
     condition:
         uint32(0) == 0x04034b50 and
         $zip_file and
-        $spec_dir and
+        all of ($spec_dir*) and
         // check for file
         all of ($spec_file*)
 }
