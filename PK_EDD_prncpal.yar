@@ -13,7 +13,7 @@ rule PK_EDD_prncpal : EDD
         $zip_file = { 50 4b 03 04 }
         // specific directory found in PhishingKit
         $spec_dir = "edd_fonts"
-        spec_dir2 = "ca_images"
+        $spec_dir2 = "ca_images"
         // specific file found in PhishingKit
         $spec_file = "2fa2.html"
         $spec_file2 = "info_dl.html"

@@ -13,7 +13,7 @@ rule PK_Eika_oio : Eika
         $zip_file = { 50 4b 03 04 }
         // specific directory found in PhishingKit
         $spec_dir = "BankID_fichiers"
-        spec_dir2 = "src"
+        $spec_dir2 = "src"
         // specific file found in PhishingKit
         $spec_file = "oio.php"
         $spec_file2 = "index33.html"
