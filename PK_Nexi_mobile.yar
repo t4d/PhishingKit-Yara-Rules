@@ -13,12 +13,12 @@ rule PK_Nexi_mobile : Nexi
         $zip_file = { 50 4b 03 04 }
         // specific directory found in PhishingKit
         $spec_dir = "pannello2"
-        $spec_dir2 = "fucked"
+        $spec_dir2 = "database"
         // specific file found in PhishingKit
         $spec_file = "carta.php"
         $spec_file2 = "key6.php"
         $spec_file3 = "ajaxstat.php"
-        $spec_file4 = "sms.php"
+        $spec_file4 = "VendorsTest_tmp.php"
 
     condition:
         // look for the ZIP header
