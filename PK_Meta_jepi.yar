@@ -1,0 +1,26 @@
+rule PK_Meta_jepi : Meta
+{
+    meta:
+        description = "Phishing Kit impersonating Meta"
+        licence = "AGPL-3.0"
+        author = "Thomas 'tAd' Damonneville"
+        reference = ""
+        date = "2025-08-28"
+        comment = "Phishing Kit - Meta - '=E JEPI FORMEN ='"
+
+    strings:
+        $zip_file = { 50 4b 03 04 }
+        $spec_dir1 = "images"
+        $spec_file1 = "indexi.html"
+        $spec_file2 = "meta.html"
+        $spec_file3 = "confirm2.html"
+        $spec_file4 = "loadingLogo.4eff47490162868e9ff2.gif"
+        $spec_file5 = "Facebook-Logo.png"
+
+    condition:
+        uint32(0) == 0x04034b50 and
+        $zip_file and
+        all of ($spec_dir*) and
+        // check for file
+        all of ($spec_file*)
+}
