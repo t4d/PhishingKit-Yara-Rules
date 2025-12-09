@@ -1,4 +1,4 @@
-rule PK_Whatsapp_Arpantek : Whatsapp
+rule PK_Whatsapp_arpantek2 : Whatsapp
 {
     meta:
         description = "Phishing Kit impersonating Whatsapp"
