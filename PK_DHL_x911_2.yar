@@ -5,13 +5,12 @@ rule PK_DHL_x911_2 : DHL
         licence = "AGPL-3.0"
         author = "Thomas 'tAd' Damonneville"
         reference = ""
-        date = "2024-09-22"
+        date = "2026-05-02"
         comment = "Phishing Kit - DHL - 'by https://t.me/X911_tools'"
 
     strings:
         $zip_file = { 50 4b 03 04 }
         $spec_dir = "X911"
-        $spec_dir2 = "LBRAD"
         $spec_dir3 = "siftA"
         $spec_file1 = "E.php"
         $spec_file2 = "X_911.php"
